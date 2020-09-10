@@ -5,166 +5,285 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System by Bektemirov Aziz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Main Solar System -->
-    <div class="solar">
+    <div class="container">
 
-        <h1>Solar System made by Bektemirov Aziz</h1>
-        <h4>Only HTML + CSS</h4>
+        <!-- Main Solar System -->
+        <div class="solar">
 
-        <div class="system">
+            <h1>Solar System made by Bektemirov Aziz</h1>
+            <h4>Only HTML + CSS</h4>
 
-            <div class="sun">
-                <!-- <img src="img/sun.png" alt=""> -->
-            </div>
+            <div class="system">
 
-            <!-- Mercury -->
-            <div class="planet-orbit planet-move mercury-orbit">
-                <div class="orbit-inner">
-                    <img class="planet-img planet-mercury" src="img/mercury.png" alt="">
+                <a href="#sun" style="display: block; z-index: 99;" class="sun">
+                </a>
+
+                <!-- Mercury -->
+                <div style="z-index: 98;" class="planet-orbit planet-move mercury-orbit">
+                    <a href="#mercury" style="display: block;" class="orbit-inner">
+                        <img class="planet-img planet-mercury" src="img/mercury.png" alt="">
+                    </a>
+
                 </div>
 
-            </div>
-
-            <!-- Venus -->
-            <div class="planet-orbit planet-move venus-orbit">
-                <div class="orbit-inner">
-                    <img class="planet-img planet-venus" src="img/venus.png" alt="">
+                <!-- Venus -->
+                <div style="z-index: 97;" class="planet-orbit planet-move venus-orbit">
+                    <a href="#venus" class="orbit-inner">
+                        <img class="planet-img planet-venus" src="img/venus.png" alt="">
+                    </a>
                 </div>
-            </div>
 
-            <!-- Earth -->
+                <!-- Earth -->
 
-            <!-- Backup for Earth without Moon -->
-            <!-- <div class="planet-orbit planet-move earth-orbit">
+                <!-- Backup for Earth without Moon -->
+                <!-- <div class="planet-orbit planet-move earth-orbit">
                 <div class="orbit-inner">
                     <img class="planet-img planet-earth" src="img/earth.png" alt="">
                 </div>
             </div> -->
 
-            <div class="planet-orbit planet-move earth-orbit">
-                <div class="orbit-inner">
-                    <div class="planet-img planet-earth">
-                        <img class="earth-img" src="img/earth.png" alt="">
-                        <div class="moon-div">
-                            <img src="img/moon.png" alt="">
-                        </div>
-                    </div>
+                <div style="z-index: 96;" class="planet-orbit planet-move earth-orbit">
+                    <a class="orbit-inner">
+                        <a href="#earth" style="z-index: 95;" class="planet-img planet-earth">
+                            <img class="earth-img" src="img/earth.png" alt="">
+                            <div class="moon-div">
+                                <img src="img/moon.png" alt="">
+                            </div>
+                        </a>
+                    </a>
+                </div>
+
+                <!-- Mars -->
+                <div style="z-index: 95;" class="planet-orbit planet-move mars-orbit">
+                    <a href="#mars" class="orbit-inner">
+                        <img src="img/mars.png" class="planet-img planet-mars" alt="">
+                    </a>
+                </div>
+
+                <!-- Asteroid Field -->
+                <div style="z-index: 94;" class="planet-move asteroids-orbit">
+                    <a style="display: block;" href="#asteroids" class="orbit-inner">
+                        <img class="asteroid-img" src="img/asteroids.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Jupiter -->
+                <div style="z-index: 93;" class="planet-orbit planet-move jupiter-orbit">
+                    <a href="#jupiter" class="orbit-inner">
+                        <img class="planet-img planet-jupiter" src="img/jupiter.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Saturn -->
+                <div style="z-index: 92;" class="planet-orbit planet-move saturn-orbit">
+                    <a href="#saturn" class="orbit-inner">
+                        <img class="planet-img planet-saturn planet-rings" src="img/saturn.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Uranus -->
+                <div style="z-index: 91;" class="planet-orbit planet-move uranus-orbit">
+                    <a href="#uranus" class="orbit-inner">
+                        <img class="planet-img planet-uranus planet-rings" src="img/uranus.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Neptune -->
+                <div style="z-index: 90;" class="planet-orbit planet-move neptun-orbit">
+                    <a href="#neptune" class="orbit-inner">
+                        <img class="planet-img planet-neptune" src="img/neptune.png" alt="">
+                    </a>
+                </div>
+
+                <!-- Pluto is a Planet! -->
+                <div style="z-index: 89;" class="planet-orbit planet-move pluto-orbit">
+                    <a href="#pluto" class="orbit-inner">
+                        <img class="planet-img planet-pluto" src="img/pluto.png" alt="">
+                    </a>
                 </div>
             </div>
-
-            <!-- Mars -->
-            <div class="planet-orbit planet-move mars-orbit">
-                <div class="orbit-inner">
-                    <img src="img/mars.png" class="planet-img planet-mars" alt="">
-                </div>
-            </div>
-
-            <!-- Asteroid Field -->
-            <div class="planet-move asteroids-orbit">
-                <div class="orbit-inner">
-                    <img class="asteroid-img" src="img/asteroids.png" alt="">
-                </div>
-            </div>
-
-            <!-- Jupiter -->
-            <div class="planet-orbit planet-move jupiter-orbit">
-                <div class="orbit-inner">
-                    <img class="planet-img planet-jupiter" src="img/jupiter.png" alt="">
-                </div>
-            </div>
-
-            <!-- Saturn -->
-            <div class="planet-orbit planet-move saturn-orbit">
-                <div class="orbit-inner">
-                    <img class="planet-img planet-saturn planet-rings" src="img/saturn.png" alt="">
-                </div>
-            </div>
-
-            <!-- Uranus -->
-            <div class="planet-orbit planet-move uranus-orbit">
-                <div class="orbit-inner">
-                    <img class="planet-img planet-uranus planet-rings" src="img/uranus.png" alt="">
-                </div>
-            </div>
-
-            <!-- Neptun -->
-            <div class="planet-orbit planet-move neptun-orbit">
-                <div class="orbit-inner">
-                    <img class="planet-img planet-neptune" src="img/neptune.png" alt="">
-                </div>
-            </div>
-
-            <!-- Pluto is a Planet! -->
-            <div class="planet-orbit planet-move pluto-orbit">
-                <div class="orbit-inner">
-                    <img class="planet-img planet-pluto" src="img/pluto.png" alt="">
-                </div>
-            </div>
-
         </div>
-    </div>
 
-    <div class="info">
-        <ul class="info__list info__list_left">
-            <li class="info__item">
-                <img class="info__img" src="img/mercury.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Mercury_(planet)">Mercury</a>
-            </li>
 
-            <li class="info__item">
-                <img class="info__img" src="img/venus.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Venus">Venus</a>
-            </li>
+        <div class="planets-info">
 
-            <li class="info__item">
-                <img class="info__img" src="img/earth.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Earth">Earth</a>
-            </li>
+            <!-- Sun -->
+            <div id="sun" class="hidden_info">
+                <img src="img/sun.png" alt="">
+                <h3 class="hidden_info_title">Sun</h3>
+                <p class="hidden_info_text">The Sun is by far the largest object in the solar system. It contains more
+                    than
+                    99.8% of the total mass of the Solar System.
 
-            <li class="info__item">
-                <img class="info__img" src="img/mars.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Mars">Mars</a>
-            </li>
+                    The Sun is, at present, about 70% hydrogen and 28% helium by mass everything else (“metals”) amounts
+                    to
+                    less than 2%. This changes slowly over time as the Sun converts hydrogen to helium in its core.
 
-            <li class="info__item">
-                <img class="info__img" src="img/asteroids.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Asteroid_belt">Asteroid Belt</a>
-            </li>
+                    The outer layers of the Sun exhibit differential rotation: at the equator the surface rotates once
+                    every
+                    25.4 days; near the poles it’s as much as 36 days. This odd behavior is due to the fact that the Sun
+                    is
+                    not a solid body like the Earth.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Mercury -->
+            <div id="mercury" class="hidden_info">
+                <img src="img/mercury.png" alt="">
+                <h3 class="hidden_info_title">Mercury</h3>
+                <p class="hidden_info_text">Named for the Roman god, Mercury is the closest planet to
+                    the sun. However, Mercury’s orbit
+                    is not a perfect circle. The planet can pass as close as 29 million miles and as far away as 43
+                    million
+                    miles.
+                    Mercury is the fastest planet in the solar system, speeding along at about 29
+                    miles per second and completing each orbit around the sun in just 88 Earth days. Mercury is also the
+                    smallest planet in the solar system, measuring just 3,032 miles wide at its equator. That makes it
+                    only
+                    slightly larger than Earth’s moon.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Venus -->
+            <div id="venus" class="hidden_info">
+                <img src="img/venus.png" alt="">
+                <h3 class="hidden_info_title">Venus</h3>
+                <p class="hidden_info_text">Although the planet is the second closest planet to the sun, it's by far the
+                    hottest of the eight worlds in our solar system. Its thick atmosphere is mostly made of carbon
+                    dioxide
+                    with clouds of sulfuric acid, which creates a greenhouse effect.
 
-        </ul>
+                    Thanks to this blanket, temperatures on Venus' surface can soar over 880 degrees
+                    Fahrenheit. The surface pressure is around 90 times that on Earth, which would
+                    feel like standing under about a half a mile of water. Wintertime doesn't even provide a reprieve
+                    from
+                    the heat. With an axial tilt of three degrees, Venus has just one season: hot.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Earth -->
+            <div id="earth" class="hidden_info">
+                <img src="img/earth.png" alt="">
+                <h3 class="hidden_info_title">Earth</h3>
+                <p class="hidden_info_text">Earth, our home planet, is a world unlike any other. The third planet from
+                    the sun, Earth is the only place in the known universe confirmed to host life.
 
-        <ul class="info__list info__list_right">
-            <li class="info__item">
-                <img class="info__img" src="img/jupiter.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Jupiter">Jupiter</a>
-            </li>
+                    With a radius of 3,959 miles, Earth is the fifth largest planet in our solar system, and it's the
+                    only one known for sure to have liquid water on its surface. Earth is also unique in terms of
+                    monikers. Every other solar system planet was named for a Greek or Roman deity, but for at least a
+                    thousand years, some cultures have described our world using the Germanic word “earth,” which means
+                    simply “the ground.”
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Mars -->
+            <div id="mars" class="hidden_info">
+                <img src="img/mars.png" alt="">
+                <h3 class="hidden_info_title">Mars</h3>
+                <p class="hidden_info_text">Mars, named for the Roman god of war, has long been an omen in the night
+                    sky. And in its own way, the planet’s rusty red surface tells a story of destruction. Billions of
+                    years ago, the fourth planet from the sun could have been mistaken for Earth’s smaller twin, with
+                    liquid water on its surface—and maybe even life.
 
-            <li class="info__item">
-                <img class="info__img" src="img/saturn.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Saturn">Saturn</a>
-            </li>
+                    Now, the world is a cold, barren desert with few signs of liquid water. But after decades of study
+                    using orbiters, landers, and rovers, scientists have revealed Mars as a dynamic, windblown landscape
+                    that could—just maybe—harbor microbial life beneath its rusty surface even today.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Asteroids -->
+            <div id="asteroids" class="hidden_info">
+                <img src="img/info-asteroid.png" alt="">
+                <h3 class="hidden_info_title">Asteroid Belt</h3>
+                <p class="hidden_info_text">Scattered in orbits around the sun are bits and pieces of rock left over
+                    from the dawn of the solar system. Most of these objects, called planetoids or asteroids — meaning
+                    "star-like" — orbit between Mars and Jupiter in a grouping known as the Main Asteroid Belt.
 
-            <li class="info__item">
-                <img class="info__img" src="img/uranus.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Uranus">Uranus</a>
-            </li>
+                    The Main Asteroid Belt lies more than two-and-a-half times as far as Earth does from the sun. It
+                    contains millions of asteroids, according to NASA. Most of these are relatively small, from the size
+                    of boulders to a few thousand feet in diameter. But some are significantly larger.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Jupiter -->
+            <div id="jupiter" class="hidden_info jupiter-info">
+                <img src="img/jupiter.png" alt="">
+                <h3 class="hidden_info_title">Jupiter</h3>
+                <p class="hidden_info_text">The fifth planet from the sun, Jupiter is what watercolor dreams are made
+                    of. Vibrant bands of clouds ripple around its thick atmosphere, making up a world so large that more
+                    than 1,300 Earths could fit inside. Its Great Red Spot seems to look like an enormous eye in the
+                    face of a striped giant.
 
-            <li class="info__item">
-                <img class="info__img" src="img/neptune.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Neptune">Neptune</a>
-            </li>
+                    Though seemingly serene when viewed from the relative safety of our home world, Jupiter is a chaotic
+                    and stormy place. The gas giant planet's spots come from massive storms that whip up
+                    prevailing winds as fast as 335 miles an hour at the equator—faster than any known winds on Earth.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Saturn -->
+            <div id="saturn" class="hidden_info jupiter-info">
+                <img src="img/saturn.png" alt="">
+                <h3 class="hidden_info_title">Saturn</h3>
+                <p class="hidden_info_text"> Saturn is made mostly of hydrogen and helium. Its volume is 755 times
+                    greater than that of Earth. Winds in the upper atmosphere reach 1,600 feet (500 meters) per second
+                    in the equatorial region. (In contrast, the strongest hurricane-force winds on Earth top out at
+                    about 360 feet, or 110 meters, per second.) These superfast winds, combined with heat rising from
+                    within the planet's interior, cause the yellow and gold bands visible in the atmosphere.
 
-            <li class="info__item">
-                <img class="info__img" src="img/pluto.png" alt="">
-                <a class="info__link" href="https://en.wikipedia.org/wiki/Pluto">Pluto</a>
-            </li>
+                    Saturn's ring system is the most extensive and complex in the solar system, extending hundreds of
+                    thousands of kilometers from the planet.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Uranus -->
+            <div id="uranus" class="hidden_info jupiter-info">
+                <img src="img/uranus.png" alt="">
+                <h3 class="hidden_info_title">Uranus</h3>
+                <p class="hidden_info_text">Uranus, the seventh planet from the sun, may initially look like a bland,
+                    blue-green ball. But there's a lot to love about the icy giant, from its 13 rings to its 27 known
+                    moons to the fact that it may even rain diamonds from its hazy atmosphere.
 
-        </ul>
+                    Like Saturn, Jupiter, and Neptune, Uranus is a big ball of gas, often called a jovian or gas giant
+                    world. Uranus owes its vibrant blue-green hues not from unusual oceans but from an upper atmosphere
+                    flush with methane, which absorbs the sun's red light and scatters blue light back to our eyes.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Neptune -->
+            <div id="neptune" class="hidden_info jupiter-info">
+                <img src="img/neptune.png" alt="">
+                <h3 class="hidden_info_title">Neptune</h3>
+                <p class="hidden_info_text">Neptune may seem like a serene sapphire world at first glance. But don't let
+                    its quiet azure hues fool you: The eighth planet from the sun is a wild child.
+
+                    Neptune is the windiest planet in our solar system, whipping up momentous gusts that can reach more
+                    than 1,200 miles an hour. That soothing sapphire expanse does reveal some of the whirling chaos
+                    below in the form of cloudy bands and massive gyres that look like dark smudges on its surface.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+            <!-- Pluto -->
+            <div id="pluto" class="hidden_info jupiter-info">
+                <img src="img/pluto.png" alt="">
+                <h3 class="hidden_info_title">Pluto</h3>
+                <p class="hidden_info_text"> It orbits in a disc-like zone beyond the orbit of Neptune called the Kuiper
+                    belt, a distant region populated with frozen bodies left over from the solar system's formation. The
+                    dwarf planet is a whopping 3.7 billion miles (5.9 billion kilometers) from the sun, and its average
+                    temperature hovers around -356 degrees Fahrenheit (-215 degrees Celsius).
+
+                    Pluto's surface is composed of a mixture of frozen nitrogen, methane, and carbon monoxide ices. The
+                    dwarf planet also has polar caps and regions of frozen methane and nitrogen.
+                </p>
+                <a class="hidden_info_link" href="#close">Close</a>
+            </div>
+        </div>
+
     </div>
 
 </body>

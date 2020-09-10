@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+
+}
+
 h1 {
     margin-top: 20px;
     color: white;
@@ -20,10 +25,8 @@ h4 {
 
 img {
     user-select: none;
-    pointer-events: none;
+    /* pointer-events: none; */
 }
-
-
 
 .solar {
     background: #010118;
@@ -38,6 +41,10 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.planet-orbit a {
+    display: block;
 }
 
 /* ORBITS */
@@ -140,7 +147,7 @@ img {
 }
 
 .planet-mars {
-    top: 65px;
+    top: 72px;
 }
 
 .planet-jupiter {
@@ -317,4 +324,57 @@ img {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Roboto';
+}
+
+/* TARGET CONTENT */
+
+.container {
+    position: relative;
+}
+
+.hidden_info {
+    opacity: 0;
+    color: white;
+    top: 5%;
+    max-width: 230px;
+    width: 100%;
+    right: 2%;
+    overflow: hidden;
+    position: absolute;
+    cursor: default;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden_info:target {
+    opacity: 1;
+}
+
+.hidden_info img {
+    width: 100px;
+}
+
+.hidden_info_text {
+    text-align: justify;
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 289px;
+    font-size: 15px;
+}
+
+.hidden_info_link {
+    display: block;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-top: 45px;
+    position: relative;
+    z-index: 99999;
+}
+
+.hidden_info_link:hover {
+    text-decoration: underline;
 }
